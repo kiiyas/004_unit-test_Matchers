@@ -15,6 +15,6 @@ describe('function sortByHealth should sort players by health', () => {
     ];
 
     expect(sortByHealth(entryList)).toEqual(expectedList);
-    // expect(sortByHealth(entryList)).toBe(expectedList); // проверка что не работает
+    expect(sortByHealth(entryList)).not.toBe(expectedList);
   });
 });
